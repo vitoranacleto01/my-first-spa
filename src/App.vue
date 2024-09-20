@@ -1,18 +1,25 @@
 <template>
-  <NavPage></NavPage>
-  <ContentPage></ContentPage>
-  <FooterPage></FooterPage>
+  <!-- <NavPage></NavPage> -->
+  <!-- <LoopComponent></LoopComponent> -->
+  <ObjectComponent></ObjectComponent>
+  <!-- <ContentPage></ContentPage>
+  <FooterPage></FooterPage> -->
 </template>
 
 <script>
 import NavPage from './components/default/NavPage.vue';
 import ContentPage from './components/default/ContentPage.vue';
 import FooterPage from './components/default/FooterPage.vue';
+import LoopComponent from './components/LoopComponent.vue';
+import ObjectComponent from './components/ObjectComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    NavPage, ContentPage, FooterPage
+    // NavPage, 
+    // LoopComponent
+    ObjectComponent
+    // ContentPage, FooterPage
   }
 }
 </script>
