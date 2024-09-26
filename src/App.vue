@@ -1,89 +1,37 @@
 <template>
-  <!-- <NavPage></NavPage> -->
-  <!-- <LoopComponent></LoopComponent> -->
-  <ObjectComponent></ObjectComponent>
-  <!-- <ContentPage></ContentPage>
-  <FooterPage></FooterPage> -->
+  <div class="container-fluid">
+    <h3 class="text-center">Cálculo de Formas Geométricas</h3>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <CirculoComponent />
+      </div>
+      <div class="col-12 col-md-4">
+        <EquilateroComponent />
+      </div>
+      <div class="col-12 col-md-4">
+        <TrapezioComponent />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import NavPage from './components/default/NavPage.vue';
-import ContentPage from './components/default/ContentPage.vue';
-import FooterPage from './components/default/FooterPage.vue';
-import LoopComponent from './components/LoopComponent.vue';
-import ObjectComponent from './components/ObjectComponent.vue';
+import CirculoComponent from './components/CirculoComponent.vue';
+import EquilateroComponent from './components/EquilateroComponent.vue';
+import TrapezioComponent from './components/TrapezioComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    // NavPage, 
-    // LoopComponent
-    ObjectComponent
-    // ContentPage, FooterPage
-  }
+    CirculoComponent,
+    EquilateroComponent,
+    TrapezioComponent,
+  },
 }
 </script>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+<style>
+.container-fluid {
+    padding: 20px;
 }
 </style>
