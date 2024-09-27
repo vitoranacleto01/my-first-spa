@@ -1,37 +1,25 @@
 <template>
-  <div class="container-fluid">
-    <h3 class="text-center">Cálculo de Formas Geométricas</h3>
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <CirculoComponent />
-      </div>
-      <div class="col-12 col-md-4">
-        <EquilateroComponent />
-      </div>
-      <div class="col-12 col-md-4">
-        <TrapezioComponent />
-      </div>
-    </div>
+  <div>
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/sobreNos">Sobre Nós</router-link>
+      <router-link to="/loop">Loop</router-link>
+      <router-link to="/trapezio">Trapezio</router-link>
+      <router-link to="/circulo">Circulo</router-link>
+      <router-link to="/equilatero">Equilatero</router-link>
+    </nav>
   </div>
+<br>
+<br>
+  <router-view></router-view>
 </template>
 
 <script>
-import CirculoComponent from './components/CirculoComponent.vue';
-import EquilateroComponent from './components/EquilateroComponent.vue';
-import TrapezioComponent from './components/TrapezioComponent.vue';
-
 export default {
-  name: 'App',
-  components: {
-    CirculoComponent,
-    EquilateroComponent,
-    TrapezioComponent,
-  },
+  name: 'App'
 }
 </script>
 
 <style>
-.container-fluid {
-    padding: 20px;
-}
+
 </style>
