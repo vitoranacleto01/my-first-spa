@@ -1,5 +1,3 @@
-// const { default: TrapezioComponent } = require("./components/TrapezioComponent.vue");
-
 import { createRouter, createWebHistory } from "vue-router";
 import CirculoComponent from "./components/CirculoComponent.vue";
 import LoopComponent from "./components/LoopComponent.vue";
@@ -7,6 +5,7 @@ import TrapezioComponent from "./components/TrapezioComponent.vue";
 import EquilateroComponent from "./components/EquilateroComponent.vue";
 import HomeComponent from "./components/HomeComponent.vue";
 import SobreNosComponent from "./components/SobreNosComponent.vue";
+import LoginComponent from "./components/LoginComponent.vue";
 
 const routes = [
     {
@@ -38,12 +37,17 @@ const routes = [
         path: '/equilatero',
         name: 'Equilatero',
         component: EquilateroComponent
-    }
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: LoginComponent
+    },
 ];
 
 const router = createRouter({
     history: createWebHistory(),
     routes
-})
+});
 
 export default router;

@@ -7,6 +7,9 @@
       <router-link to="/trapezio">Trapezio</router-link>
       <router-link to="/circulo">Circulo</router-link>
       <router-link to="/equilatero">Equilatero</router-link>
+      <router-link to="/login">login</router-link>
+
+
     </nav>
   </div>
 <br>
