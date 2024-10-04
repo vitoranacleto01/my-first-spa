@@ -11,5 +11,7 @@ export default {
 </script>
 
 <style>
-
+/* footer {
+    background-color: black;
+} */
 </style>

@@ -7,6 +7,7 @@ import TrapezioComponent from "./components/TrapezioComponent.vue";
 import EquilateroComponent from "./components/EquilateroComponent.vue";
 import HomeComponent from "./components/HomeComponent.vue";
 import SobreNosComponent from "./components/SobreNosComponent.vue";
+import ContatoComponent from "./components/ContatoComponent.vue";
 
 const routes = [
     {
@@ -38,6 +39,11 @@ const routes = [
         path: '/equilatero',
         name: 'Equilatero',
         component: EquilateroComponent
+    },
+    {
+        path: '/contato',
+        name: 'Contato',
+        component: ContatoComponent
     }
 ];
 
