@@ -6,6 +6,7 @@ import EquilateroComponent from "./components/EquilateroComponent.vue";
 import HomeComponent from "./components/HomeComponent.vue";
 import SobreNosComponent from "./components/SobreNosComponent.vue";
 import LoginComponent from "./components/LoginComponent.vue";
+import ContatoComponent from "./components/ContatoComponent.vue";
 
 const routes = [
     {
@@ -43,6 +44,11 @@ const routes = [
         name: 'Login',
         component: LoginComponent
     },
+    {
+        path: '/contato',
+        name: 'Contato',
+        component: ContatoComponent
+    }
 ];
 
 const router = createRouter({
