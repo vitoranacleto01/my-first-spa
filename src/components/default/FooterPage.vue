@@ -1,7 +1,7 @@
 <template>
-<footer>
+<!-- <footer> -->
     <p>&copy; 2024 Etec JK</p>
-</footer>
+<!-- </footer> -->
 </template>
 
 <script>
