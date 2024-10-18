@@ -9,30 +9,29 @@
       <router-link to="/equilatero">Equilatero</router-link>
       <router-link to="/login">Login</router-link>
       <router-link to="/contato">Contato</router-link>
+      <router-link to="/naruto">Naruto</router-link>
     </nav>
     <router-view class="router-view"></router-view>
-    
   </div>
   <div class="footer"><FooterPage /></div>
 </template>
 
 <script>
-import HeaderPage from './components/default/HeaderPage.vue';
-import ModalPage from './components/default/ModalPage.vue';
-import FooterPage from './components/default/FooterPage.vue';
+import HeaderPage from "./components/default/HeaderPage.vue";
+import ModalPage from "./components/default/ModalPage.vue";
+import FooterPage from "./components/default/FooterPage.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HeaderPage,
     ModalPage,
-    FooterPage
-  }
-}
+    FooterPage,
+  },
+};
 </script>
 
 <style>
-
 * {
   margin: 0;
   padding: 0;

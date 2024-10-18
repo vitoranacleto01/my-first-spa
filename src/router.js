@@ -7,53 +7,59 @@ import HomeComponent from "./components/HomeComponent.vue";
 import SobreNosComponent from "./components/SobreNosComponent.vue";
 import LoginComponent from "./components/LoginComponent.vue";
 import ContatoComponent from "./components/ContatoComponent.vue";
+import FetchNaruto from "./components/FetchNaruto.vue";
 
 const routes = [
-    {
-        path: '/',
-        name: 'Home',
-        component: HomeComponent
-    },
-    {
-        path: '/sobreNos',
-        name: 'Sobre-Nós',
-        component: SobreNosComponent
-    },
-    {
-        path: '/loop',
-        name: 'Loop',
-        component: LoopComponent
-    },
-    {
-        path: '/trapezio',
-        name: 'Trapezio',
-        component: TrapezioComponent
-    },
-    {
-        path: '/circulo',
-        name: 'Circulo',
-        component: CirculoComponent
-    },
-    {
-        path: '/equilatero',
-        name: 'Equilatero',
-        component: EquilateroComponent
-    },
-    {
-        path: '/login',
-        name: 'Login',
-        component: LoginComponent
-    },
-    {
-        path: '/contato',
-        name: 'Contato',
-        component: ContatoComponent
-    }
+  {
+    path: "/",
+    name: "Home",
+    component: HomeComponent,
+  },
+  {
+    path: "/sobreNos",
+    name: "Sobre-Nós",
+    component: SobreNosComponent,
+  },
+  {
+    path: "/loop",
+    name: "Loop",
+    component: LoopComponent,
+  },
+  {
+    path: "/trapezio",
+    name: "Trapezio",
+    component: TrapezioComponent,
+  },
+  {
+    path: "/circulo",
+    name: "Circulo",
+    component: CirculoComponent,
+  },
+  {
+    path: "/equilatero",
+    name: "Equilatero",
+    component: EquilateroComponent,
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: LoginComponent,
+  },
+  {
+    path: "/contato",
+    name: "Contato",
+    component: ContatoComponent,
+  },
+  {
+    path: "/naruto",
+    name: "Naruto",
+    component: FetchNaruto,
+  }
 ];
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes
+  history: createWebHistory(),
+  routes,
 });
 
 export default router;
