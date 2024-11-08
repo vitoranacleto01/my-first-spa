@@ -22,6 +22,11 @@
           <img :src="character.images[0]" class="card-img-top" />
           <div class="card-body">
             <h5 class="card-title">{{ character.name }}</h5>
+            <router-link
+              :to="{ name: 'NarutoDetail', params: { id: character.id } }"
+            >
+              Detalhes
+            </router-link>
           </div>
           <div class="card-dropdown">
             <a

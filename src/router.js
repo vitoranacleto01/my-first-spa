@@ -8,6 +8,7 @@ import SobreNosComponent from "./components/SobreNosComponent.vue";
 import LoginComponent from "./components/LoginComponent.vue";
 import ContatoComponent from "./components/ContatoComponent.vue";
 import FetchNaruto from "./components/FetchNaruto.vue";
+import NarutoDetail from "./components/NarutoDetail.vue";
 
 const routes = [
   {
@@ -54,7 +55,13 @@ const routes = [
     path: "/naruto",
     name: "Naruto",
     component: FetchNaruto,
-  }
+  },
+  {
+    path: "/naruto/:id",
+    name: "NarutoDetail",
+    component: NarutoDetail,
+    props: true, //indicador de que está passando propriedade para essa rota.
+  },
 ];
 
 const router = createRouter({
